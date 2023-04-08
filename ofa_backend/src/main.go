@@ -17,7 +17,7 @@ type Founder struct {
 
 func main() {
 
-	databaseUrl := "postgres://postgres:23des2001@localhost:5432/postgres"
+	databaseUrl := "postgres://ofadev:yahyaahmad@postgres:5432/ofadev"
 
 	dbPool, err := pgx.Connect(context.Background(), databaseUrl)
 
@@ -60,6 +60,6 @@ func main() {
 		rw.Write(resp)
 	})
 
-	log.Println("Server is available at http://localhost:8000")
-	log.Fatal(http.ListenAndServe(":8000", handler))
+	log.Println("Server is available at http://ofa-backend:8080")
+	log.Fatal(http.ListenAndServe("ofa-backend:8080", handler))
 }

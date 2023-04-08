@@ -1,5 +1,5 @@
 export async function getServerSideProps() {
-    const {name, uni} = await fetch("http://localhost:8000/founder").then(x => x.json());
+    const {name, uni} = await fetch("http://ofa-backend:8080/founder").then(x => x.json());
     console.log(name)
     console.log(uni)
     return {
