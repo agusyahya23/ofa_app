@@ -1,0 +1,48 @@
+version: '3'
+services:
+
+  postgres:
+    container_name: postgres_demo
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: ofadev
+      POSTGRES_PASSWORD: yahyaahmad
+      PGDATA: /data/postgres
+    volumes:
+       - postgres-db:/data/postgres
+    ports:
+      - "5432:5432"
+
+  ofa-backend:
+    build: ./ofa_backend
+    container_name: ofa-backend
+    restart: always
+    environment:
+      - POSTGRES_USER=ofadev
+      - POSTGRES_PASSWORD=yahyaahmad
+    ports:
+      - 8080:8080
+    links:
+      - postgres
+    volumes:
+      - ./ofa_backend:/app
+
+  ofa-frontend:
+    build:
+      context: ofa_frontend/
+      dockerfile: Dockerfile
+    volumes:
+      - ./ofa_frontend:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/.next
+    env_file:
+      - .env
+    links:
+      - ofa-backend
+    ports:
+      - 3000:3000
+
+
+volumes:
+  postgres-db:
+    driver: local
