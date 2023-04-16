@@ -32,8 +32,11 @@ services:
       context: ofa_frontend/
       dockerfile: Dockerfile
     volumes:
+      # Required to sync file changes.
       - ./ofa_frontend:/usr/src/app
+      # Required to not break node modules.
       - /usr/src/app/node_modules
+      # Required for next to do it's thing.
       - /usr/src/app/.next
     env_file:
       - .env
