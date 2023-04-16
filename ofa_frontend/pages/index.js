@@ -7,8 +7,8 @@ const Index = () => {
   return (
     <Layout pageTitle="OFA App">
       <Header />
-      <Landing />
-      <Service />
+      <Landing/>
+      <Service/>
     </Layout>
   )
 }

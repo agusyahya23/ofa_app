@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 const Landing = () => {
   return (
-    <section className="section position-relative" id="landing">
+    <section className="section position-relative">
       <Container>
         <Row className="align-items-center">
           <Col lg={6}>

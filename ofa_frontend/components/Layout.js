@@ -10,9 +10,7 @@ const Layout = props => {
                 <meta httpEquiv='X-UA-Compatible' content='ie=edge' />
                 <link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
             </Head>
-            <div>
                 {props.children}
-            </div>
         </div>
     )
 }
