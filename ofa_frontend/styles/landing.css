@@ -22,21 +22,68 @@ on the page. */
 
     margin-left: auto;
     position: relative;
-
 }
-.hero-container *{
+
+.hero-container>*{
     top: 0; left: 0; right: 0; bottom: 0;
     margin: auto;
-    
+    position: absolute;
+}
+
+.backdrop-hero{
+    box-shadow: 0 0 10rem #27d388;
+    background: #27d388;
+    filter: blur(5rem);
+    border-radius: 50%;
+
+    height: 40%; width: 40%;
+}
+
+.backdrop{
+    background: #27d388;
+
+    aspect-ratio: 1/1;
+    height: 40%;
+    border-radius: 100%;
+
+    position: absolute;
+}
+
+.backdrop-one{
+
+    box-shadow: 0 0 10rem #27d388;
+    filter: blur(5rem);
+    top: 45%;
+    left: -15%;
+}
+
+.backdrop-two{
+
+    box-shadow: 0 0 30rem #27d388;
+    filter: blur(6rem);
+    right: -15%;
+    top: 15%;
+}
+
+.hero-container{
+    aspect-ratio: 1 / 1;
+    height: 30rem;
+
+    margin: auto;
+    position: relative;
+
+}
+.hero-container{
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+
     position: absolute;
 }
 
 .hero-container .backdrop{
-    box-shadow: 0 0 10rem #ffffff;
+    box-shadow: 0 0 10rem #27d388;
     border-radius: 30%;
-    
+
     height: 40%; width: 40%;
 
 }
-
-
