@@ -1,10 +1,11 @@
 .section {
-    position: relative;
     height: calc(100vh - 60px);
     padding-top: 60px;
 
+    overflow-x: hidden;
 }
 body {
   background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(41, 39, 32) 0%, rgba(4,0,4,1) 90% );
   color: white;
+
 }
