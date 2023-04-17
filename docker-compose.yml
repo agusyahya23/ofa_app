@@ -1,9 +1,8 @@
 version: '3'
 services:
-
   postgres:
     container_name: postgres_demo
-    image: postgres:latest
+    image: postgres:alpine
     environment:
       POSTGRES_USER: ofadev
       POSTGRES_PASSWORD: yahyaahmad

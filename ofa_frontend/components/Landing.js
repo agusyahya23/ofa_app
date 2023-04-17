@@ -16,8 +16,10 @@ const Landing = () => {
             </div>
           </Col>
           <Col lg={6}>
-            <div className="mt-5 mt-lg-0">
+            <div className="mt-5 mt-lg-0 hero-container">
+              <div className="backdrop"></div>
               <img src="/images/logoRemake.png" alt="" className="img-fluid mx-auto d-block"/>
+             
             </div>
           </Col>
         </Row>

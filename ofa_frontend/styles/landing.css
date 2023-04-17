@@ -1,7 +1,42 @@
 .img-fluid {
-    border-radius: 50%;
     object-fit: cover;
-    width: 30rem;
-    height:30rem;
-    box-shadow: 0 0 50px #ccc;
+
+    height:100%; width: 100%;
+
+    /* lk prefer iki uncomment ae, karo bagian bawah comment kabeh */
+    
+    /* height:30rem; width: 30rem;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #ffffff; */
 }
+
+/* In the context of a landing page, a "hero" typically refers to the main and 
+prominent section or element that is designed to capture the attention of visitors 
+and convey a compelling message or offer. The hero section is typically placed at the 
+top of the landing page and is often the first thing that visitors see when they land 
+on the page. */
+
+.hero-container{
+    aspect-ratio: 1 / 1;
+    height: 30rem;
+
+    margin-left: auto;
+    position: relative;
+
+}
+.hero-container *{
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    
+    position: absolute;
+}
+
+.hero-container .backdrop{
+    box-shadow: 0 0 10rem #ffffff;
+    border-radius: 30%;
+    
+    height: 40%; width: 40%;
+
+}
+
+
