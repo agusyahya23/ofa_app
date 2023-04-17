@@ -1,0 +1,50 @@
+version: '3'
+services:
+  postgres:
+    container_name: postgres_demo
+    image: postgres:alpine
+    environment:
+      POSTGRES_USER: ofadev
+      POSTGRES_PASSWORD: yahyaahmad
+      PGDATA: /data/postgres
+    volumes:
+       - postgres-db:/data/postgres
+    ports:
+      - "5432:5432"
+
+  ofa-backend:
+    build: ./ofa_backend
+    container_name: ofa-backend
+    restart: always
+    environment:
+      - POSTGRES_USER=ofadev
+      - POSTGRES_PASSWORD=yahyaahmad
+    ports:
+      - 8080:8080
+    links:
+      - postgres
+    volumes:
+      - ./ofa_backend:/app
+
+  ofa-frontend:
+    build:
+      context: ofa_frontend/
+      dockerfile: Dockerfile
+    volumes:
+      # Required to sync file changes.
+      - ./ofa_frontend:/usr/src/app
+      # Required to not break node modules.
+      - /usr/src/app/node_modules
+      # Required for next to do it's thing.
+      - /usr/src/app/.next
+    env_file:
+      - .env
+    links:
+      - ofa-backend
+    ports:
+      - 3000:3000
+
+
+volumes:
+  postgres-db:
+    driver: local
