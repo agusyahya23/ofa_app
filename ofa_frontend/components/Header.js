@@ -47,11 +47,12 @@ const Header = () => {
               <NavLink href="#service">Services</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#app">Buzz</NavLink>
+              <NavLink href="#app">About</NavLink>
             </NavItem>
           </Nav>
         </Nav>
       </Collapse>
+      <NavLink href="#contact">Contact Us</NavLink>
     </Navbar>
   );
 };
