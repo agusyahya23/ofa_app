@@ -49,10 +49,12 @@ const Header = () => {
             <NavItem>
               <NavLink href="#app">About</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="#contact">Contact Us</NavLink>
+            </NavItem>
           </Nav>
         </Nav>
       </Collapse>
-      <NavLink href="#contact">Contact Us</NavLink>
     </Navbar>
   );
 };
