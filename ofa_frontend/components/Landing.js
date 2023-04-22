@@ -8,7 +8,18 @@ const Landing = () => {
       <Container>
         <Row className="align-items-center h-100">
           <Col lg={4}>
-
+            <div className='card-product'>
+              <p className='card-num'>5+</p>
+              <p>Products</p>
+            </div>
+            <div className='card-access'>
+              <p className='card-num'>100+</p>
+              <p>Accessed</p>
+            </div>
+            <div className='card-user'>
+              <p className='card-num'>20+</p>
+              <p>Users</p>
+            </div>
           {/* <div className="backdrop backdrop-three" /> */}
             {/* <div className="pr-lg-5">
               <div className="backdrop"></div>
@@ -21,13 +32,24 @@ const Landing = () => {
             </div> */}
           </Col>
           <Col lg={4}>
-          <div className='hero-container'>
-            <div className='backdrop-hero'></div>
-            <img src="/images/landing-hero.png" alt="" className="img-fluid mx-auto d-block"/>
+            <div className='card-title'>
+              One For All
+            </div>
+            <div className='hero-container'>
+              <div className='backdrop-hero'></div>
+              <img src="/images/landing-hero.png" alt="" className="img-fluid mx-auto d-block"/>
 
-          </div>
+            </div>
           </Col>
           <Col lg={4}>
+            <div className='card-content'>
+              <p>All-in-one platform</p>
+              <p>More services more solutions</p>
+              <p>Comprehensive ecosystem</p>
+            </div>
+            <div className='card-start'>
+              GET STARTED
+            </div>
           </Col>
         </Row>
       </Container>

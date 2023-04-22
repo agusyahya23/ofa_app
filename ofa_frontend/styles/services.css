@@ -7,11 +7,13 @@
 
 .carousel-item{
     height: 60vh;
+    margin-top: 20vh;
 }
 
 .carousel-item .row{
     height: 100%;
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: space-around;
+    margin:auto;
 }

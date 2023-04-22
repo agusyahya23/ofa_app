@@ -62,14 +62,14 @@ const Services = (args) => {
         className="carousel-item"
       >
         <Row>
-          <Col lg={6}>
+          <Col lg={5}>
               <h2 className="mb-4 font-weight-normal line-height-1_4">{item.title}</h2>
               <p className="text-muted mb-4 pb-2">{item.desc}</p>
               <a href="#" className="btn btn-warning">
                 Learn More<span className="ml-2 right-icon">&#8594;</span>
               </a>
           </Col>
-          <Col lg={3}>
+          <Col lg={5}>
             <img src={item.src} alt={item.altText}/>
           </Col>
           

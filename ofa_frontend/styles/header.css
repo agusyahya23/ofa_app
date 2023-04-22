@@ -8,11 +8,12 @@
 }
 
 .navbar {
+    justify-content: center;
     padding: 10px 0px;
     line-height: 50px;
-    opacity: 0.4;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(41, 39, 32) 0%, rgba(4,0,4,1) 90% );;
 }
 
 .navbar-brand {
-    color: white
+    color: green
 }
