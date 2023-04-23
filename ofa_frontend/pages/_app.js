@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import '../styles/header.css';
 import '../styles/landing.css';
 import '../styles/services.css';
+import '../styles/about.css';
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

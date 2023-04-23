@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 const Landing = () => {
   return (
-    <section className="section position-relative">
+    <section id="landing" className="section position-relative">
     <div className="backdrop backdrop-one" />
     <div className="backdrop backdrop-two" />
       <Container>

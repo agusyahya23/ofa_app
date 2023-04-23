@@ -7,7 +7,7 @@
 
 .carousel-item{
     height: 60vh;
-    margin-top: 20vh;
+    padding: 10vh;
 }
 
 .carousel-item .row{
@@ -16,4 +16,7 @@
     display: flex;
     justify-content: space-around;
     margin:auto;
+}
+.carousel {
+    padding: 70px;
 }

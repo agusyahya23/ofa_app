@@ -35,19 +35,21 @@ const Header = () => {
       expand="md"
       sticky={sticky ? "top" : ""}
     >
-      <NavbarBrand href="/">OFA</NavbarBrand>
+      <NavbarBrand href="/">
+        <img className="logo" src="/images/ofa_official.png"></img>
+      </NavbarBrand>
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ms-auto" navbar>
           <Nav className="m-auto" navbar>
             <NavItem>
-              <NavLink href="/">Home</NavLink>
+              <NavLink href="#landing">Home</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#service">Services</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#app">About</NavLink>
+              <NavLink href="#about">About</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="#contact">Contact Us</NavLink>
