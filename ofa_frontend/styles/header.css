@@ -13,6 +13,9 @@
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(41, 39, 32) 0%, rgba(4,0,4,1) 90% );
 }
 
-.navbar-brand {
-    color: green
+.logo {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
 }

@@ -11,21 +11,21 @@ import {
 const items = [
   {
     title: "QR Generator",
-    desc:"QR Generator is a convenient online tool that allows users to easily generate QR codes without any software installation. Users can access the app through a web browser on their desktop computers, laptops, tablets, or smartphones. The app provides a user-friendly interface for inputting desired data, such as URLs, text, or contact information, and generates unique QR codes instantly.",
+    desc:"QR Generator is a convenient online tool that allows users to easily generate QR codes without any software installation. Users can access the app through a web browser on their desktop computers, laptops, tablets, or smartphones.",
     src: "https://picsum.photos/id/123/1200/400",
     altText: "Slide 1",
     key: 1,
   },
   {
     title: "Manga Reader",
-    desc:"Introducing Manga Reader - the ultimate manga reader app for manga enthusiasts! Dive into a world of captivating stories, vibrant artwork, and immersive storytelling with Manga Reader. With an extensive collection of popular manga series from various genres, Manga Reader offers a seamless reading experience that brings your favorite manga to life on your device. ",
+    desc:"Introducing Manga Reader - the ultimate manga reader app for manga enthusiasts! Dive into a world of captivating stories, vibrant artwork, and immersive storytelling with Manga Reader. ",
     src: "https://play-lh.googleusercontent.com/puWWibG74VwUtLVsndVAggTBfEIsfgmql0wl2dyKTRgokQrpSU8qwGDAndVL7Yfk5w",
     altText: "Slide 2",
     key: 2,
   },
   {
     title: "Chat App",
-    desc:"The Chat App is a dynamic and convenient communication tool that brings real-time chat functionality to your website. With this chat app, visitors can engage in live conversations with your team, ask questions, seek assistance, and receive prompt responses. The chat app is easy to use, with a sleek and intuitive interface that integrates seamlessly into your website, allowing for seamless communication between your visitors and your team. Whether it's for customer support, sales inquiries, or general engagement, the Chat App enhances the user experience on your website, fostering better engagement, increased satisfaction, and improved conversions. ",
+    desc:"The Chat App is a dynamic and convenient communication tool that brings real-time chat functionality to your website. With this chat app, visitors can engage in live conversations with your team, ask questions, seek assistance, and receive prompt responses.",
     src: "https://picsum.photos/id/678/1200/400",
     altText: "Slide 3",
     key: 3,
@@ -83,7 +83,7 @@ const Services = (args) => {
   });
 
   return (
-    <section className="section position-relative">
+    <section id="service" className="section position-relative">
     <h1 className="text-center">Our Services</h1>
       
     <Carousel

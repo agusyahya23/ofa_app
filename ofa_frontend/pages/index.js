@@ -1,14 +1,16 @@
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import Landing from "../components/Landing";
-import Service from "../components/Services";
+import Services from "../components/Services";
+import About from "../components/About";
 
 const Index = () => {
   return (
     <Layout pageTitle="OFA App">
       <Header />
       <Landing id="landing"/>
-      <Service id="service"/>
+      <Services id="service"/>
+      <About id="about"/>
     </Layout>
   )
 }
